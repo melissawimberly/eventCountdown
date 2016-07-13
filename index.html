@@ -8,12 +8,21 @@
 		<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
 		<script type="text/javascript" src="js/jquery.plugin.min.js"></script>
 		<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('.my-countdown').countdown({
+					until: $.countdown.UTCDate(
+						-6, 2016, 8, 8, 0, 0, 0
+					)
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<div id="world-premiere">
 			<div class="heading">
-				<h2>Countdown to the</h2>
-				<h1>World Premiere</h1>
+				<h2>Coming Soon</h2>
+				<h1>Health Unlocked</h1>
 			</div>
 			<div class="my-countdown"></div>
 		</div>

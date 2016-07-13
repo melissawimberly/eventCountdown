@@ -12,7 +12,8 @@ body { margin: 0; padding: 0; background-color: #092f6e; color: #fff; }
 	margin: 25px auto;
 	border: 1px solid rgba(255,255,255,.2);
 	background: #092f6e url(yogaSitting.jpg) no-repeat center bottom;
-	min-height: 575px;
+	min-height: 640px;
+	position: relative;
 }
 
 #world-premiere .heading {
@@ -43,3 +44,25 @@ body { margin: 0; padding: 0; background-color: #092f6e; color: #fff; }
 	text-align: center;
 	letter-spacing: 9px;
 }
+
+#world-premiere .my-countdown { position: absolute; bottom: 0; width: 100%; } 
+#world-premiere .my-countdown .countdown-row { display: block; text-align: center }
+#world-premiere .my-countdown .countdown-section {display: inline-block; width: 95px;}
+#world-premiere .my-countdown .countdown-amount { display: block; color: #ffff; font-size: 5.6em; line-height: 55px; }
+#world-premiere .my-countdown .countdown-period { display: block; color: #6fb5f8; font-size: 1.4em; text-transform: uppercase; letter-spacing: 2px; }
+
+
+@media screen and (max-width: 525px) {
+	#world-premiere{ font-size: 12px; width: 300px; min-height: 525px; background-size: 400px auto }
+	#world-premiere .heading { padding: 12px 0 8px 0; margin-bottom: 20px; }
+	#world-premiere h1 {
+		line-height: 40px;
+		font-size: 3.7em;
+	}
+	#world-premiere h2 { line-height: 22px; letter-spacing: 5px; }
+	#world-premiere .my-countdown .countdown-section { width: 68px; }
+}
+
+
+
+
